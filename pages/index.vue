@@ -11,17 +11,16 @@ const { data } = await useAsyncData('quote', () => queryContent(locale.value, 'q
   <div>
 
     <div id="quote" class="flex flex-col md:flex-row items-center gap-4 justify-between">
-      <div class="text-2xl flex flex-col justify-center max-w-[600px]"> 
+      <div class="text-2xl flex flex-col justify-center max-w-[500px]">
         <span class="text-primary ds-serif text-sm">ACERCA</span>
         <ContentRenderer :value="data" />
       </div>
 
-        <nuxt-img
-         src="/img/eduardo.jpg" sizes="sm:100vw md:50vw lg:400px" 
-          fit="cover" 
-          :modifiers="{ roundCorner: '0:100' }" class="rounded" />
+      <div class="w-[100vw] md:w-[50vw] lg:w-400px rounded overflow-hidden">
+        <img src="/img/eduardo.jpg" style="aspec-ratio: 3/4" width="100%" />
+      </div>
 
     </div>
-   
+
   </div>
 </template>

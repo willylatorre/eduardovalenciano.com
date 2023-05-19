@@ -4,7 +4,6 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/i18n',
     '@nuxt/content',
-    '@nuxt/image-edge',
   ],
   image: {
     provider: process.env.VERCEL_ENV ? 'vercel' : 'ipx',
