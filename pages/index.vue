@@ -16,8 +16,8 @@ const { data } = await useAsyncData('quote', () => queryContent(locale.value, 'q
         <ContentRenderer :value="data" />
       </div>
 
-      <div class="w-[100vw] md:w-[50vw] lg:w-400px rounded overflow-hidden">
-        <img src="/img/eduardo.jpg" style="aspec-ratio: 3/4" width="100%" />
+      <div>
+        <img src="/img/eduardo.jpg"  width="100%" class="w-[100vw] md:w-[50vw] lg:w-400px rounded overflow-hidden max-w-[400px]" />
       </div>
 
     </div>
