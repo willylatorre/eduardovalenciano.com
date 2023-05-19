@@ -6,6 +6,9 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxt/image-edge',
   ],
+  image: {
+    provider: 'vercel',
+  },
   i18n: {
     strategy: 'prefix_except_default',
     locales: [
