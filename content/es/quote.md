@@ -2,4 +2,6 @@
 title: 'Cita - ES'
 ---
 
-Esto es una cita
+**Psicólogo sanitario** colegiado y doctor en Psicología Clínica por la Universidad de
+Barcelona con experiencia asistencial e investigadora en la red pública de salud mental y
+adicciones
