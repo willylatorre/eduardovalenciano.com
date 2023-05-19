@@ -18,7 +18,6 @@ const { data } = await useAsyncData('quote', () => queryContent(locale.value, 'q
 
         <nuxt-img
          src="/img/eduardo.jpg" sizes="sm:100vw md:50vw lg:400px" 
-         format="webp"
           fit="cover" 
           :modifiers="{ roundCorner: '0:100' }" class="rounded" />
 
