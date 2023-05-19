@@ -7,7 +7,7 @@ export default defineNuxtConfig({
     '@nuxt/image-edge',
   ],
   image: {
-    provider: 'vercel',
+    provider: process.env.VERCEL_ENV ? 'vercel' : 'ipx',
   },
   i18n: {
     strategy: 'prefix_except_default',
