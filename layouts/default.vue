@@ -35,6 +35,8 @@ const title = computed(() => t('layouts.title', { title: t(route.meta.title ?? '
             <div class="flex justify-end text-sm">
               <a href="/" class="mr-2">{{ t('home') }}</a>
               <a href="#curriculum">{{ t('curriculum') }}</a>
+              <a href="#services">{{ t('services') }}</a>
+              <a href="#contact">{{ t('contact') }}</a>
             </div>
             <div class="text-xs text-right">
               <NuxtLink :to="switchLocalePath('es')">ES</NuxtLink> |
@@ -62,12 +64,14 @@ const title = computed(() => t('layouts.title', { title: t(route.meta.title ?? '
     "home": "Inicio",
     "psicologo": "Psicólogo",
     "curriculum": "Curriculum",
-    "contact": "Contacto"
+    "services": "Servicios",
+    "contact": "Contacto",
   },
   "ca": {
     "home": "Inici",
     "psicologo": "Psicòleg",
     "curriculum": "Curriculum",
+    "services": "Serveis",
     "contact": "Contacte"
   }
 }
