@@ -25,21 +25,27 @@ const title = computed(() => t('layouts.title', { title: t(route.meta.title ?? '
     </Head>
 
     <Body>
-      <div class="bg-white min-h-[100vh] p-4">
-        <div class="ds-wrapper">
-          <nav class="py-8 flex justify-between">
-            <div class="ds-serif ds-bold text-3xl">Eduardo <span class="text-primary">Valenciano</span></div>
-            <div class="flex">
-            <a href="/">{{ t('home') }}</a>
-            <NuxtLink :to="switchLocalePath('es')">ES</NuxtLink> / 
-            <NuxtLink :to="switchLocalePath('ca')">CA</NuxtLink>
+      <div class="bg-white min-h-[100vh]">
+        <nav class="py-8 flex flex-col md:flex-row gap-6 justify-between align-center ds-wrapper px-4">
+          <div>
+            <div class="ds-serif ds-bold text-3xl">Eduardo Valenciano<span class="text-primary text-sm">, PhD</span></div>
+            <div class="text-primary text-sm">{{ t('psicologo') }}</div>
           </div>
-          </nav>
-          <slot />
-          <footer>
-            Footer
-          </footer>
-        </div>
+          <div>
+            <div class="flex justify-end text-sm">
+              <a href="/" class="mr-2">{{ t('home') }}</a>
+              <a href="#curriculum">{{ t('curriculum') }}</a>
+            </div>
+            <div class="text-xs text-right">
+              <NuxtLink :to="switchLocalePath('es')">ES</NuxtLink> |
+              <NuxtLink :to="switchLocalePath('ca')">CA</NuxtLink>
+            </div>
+          </div>
+        </nav>
+        <slot />
+        <footer>
+          Footer
+        </footer>
       </div>
 
     </Body>
@@ -51,10 +57,14 @@ const title = computed(() => t('layouts.title', { title: t(route.meta.title ?? '
 <i18n lang="json">
 {
   "es": {
-    "home": "Inicio"
+    "home": "Inicio",
+    "psicologo": "Psicólogo",
+    "curriculum": "Curriculum"
   },
   "ca": {
-    "home": "Inici"
+    "home": "Inici",
+    "psicologo": "Psicòleg",
+    "curriculum": "Curriculum"
   }
 }
 </i18n>
