@@ -34,8 +34,8 @@ const title = computed(() => t('layouts.title', { title: t(route.meta.title ?? '
           <div>
             <div class="flex justify-end text-sm">
               <a href="/" class="mr-2">{{ t('home') }}</a>
-              <a href="#curriculum">{{ t('curriculum') }}</a>
-              <a href="#services">{{ t('services') }}</a>
+              <a href="#curriculum" class="mr-2">{{ t('curriculum') }}</a>
+              <a href="#services" class="mr-2">{{ t('services') }}</a>
               <a href="#contact">{{ t('contact') }}</a>
             </div>
             <div class="text-xs text-right">
