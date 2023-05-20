@@ -5,10 +5,6 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@nuxt/content',
   ],
-  image: {
-    provider: process.env.VERCEL_ENV ? 'vercel' : 'ipx',
-    staticFilename: '[publicPath]/[name]-[hash][ext]'
-  },
   i18n: {
     strategy: 'prefix_except_default',
     locales: [
