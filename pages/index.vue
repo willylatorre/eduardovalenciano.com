@@ -2,20 +2,22 @@
 definePageMeta({
   title: 'pages.title.top' // set resource key
 })
-const { locale, t} = useI18n()
+const { locale, t } = useI18n()
 const { data, refresh } = await useAsyncData('quote', async () => {
-  const [quote, cv, services, take] = await Promise.all([
+  const [quote, cv, services, take, contact] = await Promise.all([
     queryContent(locale.value, 'quote').findOne(),
     queryContent(locale.value, 'cv').findOne(),
     queryContent(locale.value, 'services').findOne(),
-    queryContent(locale.value, 'take').findOne()
+    queryContent(locale.value, 'take').findOne(),
+    queryContent(locale.value, 'contact').findOne()
   ])
 
   return {
     quote,
     cv,
     services,
-    take
+    take,
+    contact
   }
 })
 
@@ -71,23 +73,45 @@ watch(locale, () => {
       </div>
     </div>
 
+    <div class="bg-background px-4 py-12" id="contact">
+      <div class="ds-wrapper">
+        <h2 class="ds-serif text-2xl mb-8">
+          {{ t('contact') }}
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="take-p">
+            <ContentRenderer :value="data.contact" />
+          </div>
+          <div class="mx-auto">
+            <a href="https://goo.gl/maps/CtiKGgPqpmpbyj2J9">
+              <img width="400" height="400" class="max-w-[90vw] rounded overflow-hidden"
+                src="https://maps.googleapis.com/maps/api/staticmap?center=Consell%20de%20Cent,%20355,%20Barcelona&zoom=15&size=400x400&markers=color:blue%7C41.3918997,2.1665775&key=AIzaSyCoEmBGQloGVYe_Y3tBBM9Favi42xLWMBE" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </template>
 
 <i18n lang="json">
-  {
-    "es": {
-      "take": "Abordaje terapéutico",
-      "services": "Servicios",
-      "listOfServices": "Lista de servicios"
-    },
-    "ca": {
-      "take": "Inici",
-      "services": "Serveis",
-      "listOfServices": "Llista de serveis"
-    }
+{
+  "es": {
+    "take": "Abordaje terapéutico",
+    "services": "Servicios",
+    "contact": "Contacto",
+    "listOfServices": "Lista de servicios"
+  },
+  "ca": {
+    "take": "Inici",
+    "services": "Serveis",
+    "contact": "Contacte",
+    "listOfServices": "Llista de serveis"
   }
-  </i18n>
+}
+</i18n>
 
 
 
@@ -109,5 +133,9 @@ li {
 
 .take-p p {
   padding-bottom: 12px;
+}
+
+.take-p a {
+  text-decoration: underline;
 }
 </style>

@@ -43,8 +43,10 @@ const title = computed(() => t('layouts.title', { title: t(route.meta.title ?? '
           </div>
         </nav>
         <slot />
-        <footer>
-          Footer
+        <footer class="bg-background">
+          <div class="ds-wrapper flex items-center justify-center min-h-[100px] text-xs">
+            Eduardo Valenciano &copy; 2023 |&nbsp; <a href="mailto:evalenciano@copc.cat">{{ t('contact') }}</a>
+          </div>
         </footer>
       </div>
 
@@ -59,12 +61,14 @@ const title = computed(() => t('layouts.title', { title: t(route.meta.title ?? '
   "es": {
     "home": "Inicio",
     "psicologo": "Psicólogo",
-    "curriculum": "Curriculum"
+    "curriculum": "Curriculum",
+    "contact": "Contacto"
   },
   "ca": {
     "home": "Inici",
     "psicologo": "Psicòleg",
-    "curriculum": "Curriculum"
+    "curriculum": "Curriculum",
+    "contact": "Contacte"
   }
 }
 </i18n>
