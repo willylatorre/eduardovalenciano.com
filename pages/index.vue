@@ -28,7 +28,7 @@ const { data } = await useAsyncData('quote', async () => {
   <div>
     <div id="quote" class="flex flex-col md:flex-row items-center gap-8 justify-between ds-wrapper pb-12 px-4">
       <div class="text-xl md:text-2xl flex flex-col justify-center max-w-[500px]">
-        <span class="text-primary ds-serif text-sm mb-2">ACERCA DE MI</span>
+        <span class="text-primary ds-serif text-sm mb-2">{{ t('about') }}</span>
         <ContentRenderer :value="data.quote" :key="`quote-${key}`" />
       </div>
       <div>
@@ -99,6 +99,7 @@ const { data } = await useAsyncData('quote', async () => {
     "pages.title": "Eduardo Valenciano Mendoza, psicólogo clínico",
     "take": "Abordaje terapéutico",
     "services": "Servicios",
+    "about": "ACERCA DE MI",
     "contact": "Contacto",
     "listOfServices": "Lista de servicios"
   },
@@ -106,6 +107,7 @@ const { data } = await useAsyncData('quote', async () => {
     "pages.title": "Eduardo Valenciano Mendoza, psicòleg clínic",
     "take": "Inici",
     "services": "Serveis",
+    "about": "SOBRE MI",
     "contact": "Contacte",
     "listOfServices": "Llista de serveis"
   }
