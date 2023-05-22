@@ -19,7 +19,7 @@ addiccions de Catalunya
 - Coautor de més de trenta publicacions científiques en revistes d&#39;alt impacte en el camp de
 la psicologia clínica i la psiquiatria
 - Docent en cursos i màsters universitaris
-- Realització d&#39;estades internacionals a Trinity College Dublin (Irlanda) i a l&#39;Institut Fédératif
+- Realització d&#39;estades internacionals a Trinity College Dublin (Irlanda) a l&#39;Institut Fédératif
 des Addictions Comportementals del Centre Hospitalier Universitaire de Nantes (França)
 - Ponent en jornades i congressos nacionals i internacionals
 - Participació com a investigador en projectes internacionals

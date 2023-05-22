@@ -19,8 +19,7 @@ adicciones de Cataluña
 - Coautor de más de treinta publicaciones científicas en revistas de alto impacto en el
 campo de la psicología clínica y la psiquiatría
 - Docente en cursos y masters universitarios
-- Realización de estancias internacionales en Trinity College Dublin (Irlanda) y en el Institut
-- Fédératif des Addictions Comportementales del Centre Hospitalier Universitaire de Nantes
+- Realización de estancias internacionales en Trinity College Dublin (Irlanda) y en el Institut Fédératif des Addictions Comportementales del Centre Hospitalier Universitaire de Nantes
 (Francia)
 - Ponente en jornadas y congresos nacionales e internacionales
 - Participación como investigador en proyectos internacionales

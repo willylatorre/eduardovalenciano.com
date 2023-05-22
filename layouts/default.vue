@@ -1,5 +1,5 @@
 <script setup>
-const route = useRoute()
+// const route = useRoute()
 const { t } = useI18n()
 const head = useLocaleHead({
   addDirAttribute: true,
@@ -7,7 +7,6 @@ const head = useLocaleHead({
   addSeoAttributes: true
 })
 const switchLocalePath = useSwitchLocalePath()
-const title = computed(() => t('layouts.title', { title: t(route.meta.title ?? 'TBD') }))
 </script>
 
 <template>
@@ -15,20 +14,26 @@ const title = computed(() => t('layouts.title', { title: t(route.meta.title ?? '
     <Html :lang="head.htmlAttrs.lang" :dir="head.htmlAttrs.dir">
 
     <Head>
-      <Title>{{ title }}</Title>
+      <Title>{{ t('title') }}</Title>
       <template v-for="link in head.link" :key="link.id">
         <Link :id="link.id" :rel="link.rel" :href="link.href" :hreflang="link.hreflang" />
       </template>
       <template v-for="meta in head.meta" :key="meta.id">
         <Meta :id="meta.id" :property="meta.property" :content="meta.content" />
       </template>
+        <Meta id="title"  property="og:title" :content="t('title')" />
+        <Meta id="description"  property="description" :content="t('description')" />
+        <Meta id="description"  property="og:description" :content="t('description')" />
+        <Meta id="image" property="image" content="https://eduardovalenciano.com/img/eduardo.jpg" />
+        <Meta id="og:image" property="og:image" content="https://eduardovalenciano.com/img/eduardo.jpg" />
+        <Meta id="og:url" property="og:url" content="https://eduardovalenciano.com" />
     </Head>
 
     <Body>
       <div class="bg-white min-h-[100vh]">
         <nav class="py-8 flex flex-col md:flex-row gap-6 justify-between align-center ds-wrapper px-4">
           <div>
-            <div class="ds-serif ds-bold text-3xl">Eduardo Valenciano<span class="text-primary text-sm">, PhD</span></div>
+            <div class="ds-serif ds-bold text-3xl">Eduardo Valenciano Mendoza<span class="text-primary text-sm">, PhD</span></div>
             <div class="text-primary text-sm">{{ t('psicologo') }}</div>
           </div>
           <div>
@@ -47,7 +52,7 @@ const title = computed(() => t('layouts.title', { title: t(route.meta.title ?? '
         <slot />
         <footer class="bg-background">
           <div class="ds-wrapper flex items-center justify-center min-h-[100px] text-xs">
-            Eduardo Valenciano &copy; 2023 |&nbsp; <a href="mailto:evalenciano@copc.cat">{{ t('contact') }}</a>
+            Eduardo Valenciano Mendoza &copy; 2023 |&nbsp; <a href="mailto:evalenciano@copc.cat">{{ t('contact') }}</a>
           </div>
         </footer>
       </div>
@@ -61,13 +66,17 @@ const title = computed(() => t('layouts.title', { title: t(route.meta.title ?? '
 <i18n lang="json">
 {
   "es": {
+    "title": "Eduardo Valenciano Mendoza, psicólogo clínico",
+    "description": "Psicólogo sanitario colegiado y doctor en Psicología Clínica por la Universidad de Barcelona con experiencia asistencial e investigadora en la red pública de salud mental y adicciones",
     "home": "Inicio",
     "psicologo": "Psicólogo",
     "curriculum": "Curriculum",
     "services": "Servicios",
-    "contact": "Contacto",
+    "contact": "Contacto"
   },
   "ca": {
+    "title": "Eduardo Valenciano Mendoza, psicòleg clínic",
+    "description": "Psicòleg sanitari col·legiat i doctor en Psicologia Clínica per la Universitat de Barcelona amb experiència assistencial i investigadora a la xarxa pública de salut mental i addiccions",
     "home": "Inici",
     "psicologo": "Psicòleg",
     "curriculum": "Curriculum",

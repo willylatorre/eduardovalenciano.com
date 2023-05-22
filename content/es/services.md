@@ -6,11 +6,9 @@ title: Services - ES
 - Ansiedad
 - Depresión
 - Adicciones sin sustancias (adicción al juego, a videojuegos, al sexo, a las compras…)
-- Problemas de la conducta alimentaria (bulimia, atracón)
+- Problemas de la conducta alimentaria 
 - Dificultades para establecer relaciones sanas y satisfactorias con los demás
 - Sentimientos de vacío y soledad
 - Crisis vitales
 - Dificultades para gestionar el estrés
 - Dificultades para regular las emociones
-- Duelos y pérdidas
-- Conflictos familiares y de pareja
