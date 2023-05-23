@@ -2,7 +2,7 @@
 title: 'Contact - ES'
 ---
 
-Pot enviar-me un missatge de  <a href="https://api.whatsapp.com/send?phone=689259702">WhatsApp</a>, [Linkedin](https://www.linkedin.com/in/eduardovalencianomendoza/) o un email. Em
+Pots enviar-me un missatge de  <a href="https://api.whatsapp.com/send?phone=689259702">WhatsApp</a>, [Linkedin](https://www.linkedin.com/in/eduardovalencianomendoza/) o un email. Em
 posaré en contacte el més aviat possible.
 
 - Consulta a Barcelona
