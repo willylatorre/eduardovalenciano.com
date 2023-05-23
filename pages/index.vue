@@ -96,7 +96,7 @@ const { data } = await useAsyncData('quote', async () => {
 <i18n lang="json">
 {
   "es": {
-    "pages.title": "Eduardo Valenciano Mendoza, psicólogo clínico",
+    "pages.title": "Eduardo Valenciano Mendoza, psicólogo",
     "take": "Abordaje terapéutico",
     "services": "Servicios",
     "about": "ACERCA DE MI",
@@ -104,7 +104,7 @@ const { data } = await useAsyncData('quote', async () => {
     "listOfServices": "Lista de servicios"
   },
   "ca": {
-    "pages.title": "Eduardo Valenciano Mendoza, psicòleg clínic",
+    "pages.title": "Eduardo Valenciano Mendoza, psicòleg",
     "take": "Inici",
     "services": "Serveis",
     "about": "SOBRE MI",

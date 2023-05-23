@@ -24,8 +24,8 @@ const switchLocalePath = useSwitchLocalePath()
         <Meta id="title"  property="og:title" :content="t('title')" />
         <Meta id="description"  property="description" :content="t('description')" />
         <Meta id="description"  property="og:description" :content="t('description')" />
-        <Meta id="image" property="image" content="https://eduardovalenciano.com/img/eduardo.jpg" />
-        <Meta id="og:image" property="og:image" content="https://eduardovalenciano.com/img/eduardo.jpg" />
+        <Meta id="image" property="image" content="https://eduardovalenciano.com/img/eduardo-snap.jpg" />
+        <Meta id="og:image" property="og:image" content="https://eduardovalenciano.com/img/eduardo-snap.jpg" />
         <Meta id="og:url" property="og:url" content="https://eduardovalenciano.com" />
     </Head>
 
@@ -66,8 +66,8 @@ const switchLocalePath = useSwitchLocalePath()
 <i18n lang="json">
 {
   "es": {
-    "title": "Eduardo Valenciano Mendoza, psicólogo clínico",
-    "description": "Psicólogo sanitario colegiado y doctor en Psicología Clínica por la Universidad de Barcelona con experiencia asistencial e investigadora en la red pública de salud mental y adicciones",
+    "title": "Eduardo Valenciano Mendoza, psicólogo",
+    "description": "Psicólogo sanitario y doctor en Psicología Clínica por la Universidad de Barcelona con experiencia asistencial e investigadora en la red pública de salud mental y adicciones",
     "home": "Inicio",
     "psicologo": "Psicólogo",
     "curriculum": "Curriculum",
@@ -75,8 +75,8 @@ const switchLocalePath = useSwitchLocalePath()
     "contact": "Contacto"
   },
   "ca": {
-    "title": "Eduardo Valenciano Mendoza, psicòleg clínic",
-    "description": "Psicòleg sanitari col·legiat i doctor en Psicologia Clínica per la Universitat de Barcelona amb experiència assistencial i investigadora a la xarxa pública de salut mental i addiccions",
+    "title": "Eduardo Valenciano Mendoza, psicòleg",
+    "description": "Psicòleg sanitari i doctor en Psicologia Clínica per la Universitat de Barcelona amb experiència assistencial i investigadora a la xarxa pública de salut mental i addiccions",
     "home": "Inici",
     "psicologo": "Psicòleg",
     "curriculum": "Curriculum",
