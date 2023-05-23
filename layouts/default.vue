@@ -22,10 +22,14 @@ const switchLocalePath = useSwitchLocalePath()
         <Meta :id="meta.id" :property="meta.property" :content="meta.content" />
       </template>
         <Meta id="title"  property="og:title" :content="t('title')" />
+        <Meta id="sitename"  property="og:site_name" :content="t('title')" />
         <Meta id="description"  property="description" :content="t('description')" />
+        <Meta id="og:description"  property="og:description" :content="t('description')" />
+        <Meta id="og:description"  property="og:type" content="website" />
         <Meta id="og:description"  property="og:description" :content="t('description')" />
         <Meta id="image" property="image" content="https://eduardovalenciano.com/img/eduardo-snap.jpg" />
         <Meta id="og:image" property="og:image" content="https://eduardovalenciano.com/img/eduardo-snap.jpg" />
+        <Meta id="og:image:type" property="og:image:type" content="image/jpeg" />
         <Meta id="og:url" property="og:url" content="https://eduardovalenciano.com" />
     </Head>
 
