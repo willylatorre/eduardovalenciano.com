@@ -23,7 +23,7 @@ const switchLocalePath = useSwitchLocalePath()
       </template>
         <Meta id="title"  property="og:title" :content="t('title')" />
         <Meta id="description"  property="description" :content="t('description')" />
-        <Meta id="description"  property="og:description" :content="t('description')" />
+        <Meta id="og:description"  property="og:description" :content="t('description')" />
         <Meta id="image" property="image" content="https://eduardovalenciano.com/img/eduardo-snap.jpg" />
         <Meta id="og:image" property="og:image" content="https://eduardovalenciano.com/img/eduardo-snap.jpg" />
         <Meta id="og:url" property="og:url" content="https://eduardovalenciano.com" />
