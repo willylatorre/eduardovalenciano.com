@@ -110,6 +110,22 @@ const { data } = await useAsyncData('quote', async () => {
     "about": "SOBRE MI",
     "contact": "Contacte",
     "listOfServices": "Llista de serveis"
+  },
+  "en": {
+    "pages.title": "Eduardo Valenciano Mendoza, psicòleg",
+    "take": "Inici",
+    "services": "Serveis",
+    "about": "ABOUT ME",
+    "contact": "Contacte",
+    "listOfServices": "Llista de serveis"
+  },
+  "fr": {
+    "pages.title": "Eduardo Valenciano Mendoza, psicòleg",
+    "take": "Inici",
+    "services": "Serveis",
+    "about": "SOBRE MI",
+    "contact": "Contacte",
+    "listOfServices": "Llista de serveis"
   }
 }
 </i18n>
