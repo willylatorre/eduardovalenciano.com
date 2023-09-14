@@ -28,6 +28,14 @@ export default defineNuxtConfig({
       {
         code: 'ca',
         iso: 'ca'
+      },
+      {
+        code: 'en',
+        iso: 'en-EN'
+      },
+      {
+        code: 'fr',
+        iso: 'fr'
       }
     ],
     baseUrl: 'https://eduardovalenciano.com',
