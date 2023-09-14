@@ -29,7 +29,7 @@ const { data } = await useAsyncData('quote', async () => {
     <div id="quote" class="flex flex-col md:flex-row items-center gap-8 justify-between ds-wrapper pb-12 px-4">
       <div class="text-xl md:text-2xl flex flex-col justify-center max-w-[500px]">
         <span class="text-primary ds-serif text-sm mb-2">{{ t('about') }}</span>
-        <ContentRenderer :value="data.quote" :key="`quote-${key}`" />
+        <ContentRenderer :value="data.quote" :key="`quote-${locale}`" />
       </div>
       <div>
         <img src="/img/eduardo.jpg" width="100%"
@@ -44,7 +44,7 @@ const { data } = await useAsyncData('quote', async () => {
         </h2>
 
         <div class="flex flex-wrap gap-4 cv-list">
-          <ContentRenderer :value="data.cv" :key="`cv-${key}`" />
+          <ContentRenderer :value="data.cv" :key="`cv-${locale}`" />
         </div>
       </div>
     </div>
@@ -58,12 +58,12 @@ const { data } = await useAsyncData('quote', async () => {
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div class="take-p">
             <h4 class="text-primary ds-serif text-sm mb-2 uppercase">{{ t('take') }}</h4>
-            <ContentRenderer :value="data.take" :key="`take-${key}`" />
+            <ContentRenderer :value="data.take" :key="`take-${locale}`" />
           </div>
           <div class="mx-auto">
             <h4 class="text-primary ds-serif text-sm mb-2 uppercase">{{ t('listOfServices') }}</h4>
             <div class="border border-background rounded p-4 text-sm max-w-[400px]">
-              <ContentRenderer :value="data.services"  :key="`services-${key}`"/>
+              <ContentRenderer :value="data.services"  :key="`services-${locale}`"/>
             </div>
           </div>
         </div>
@@ -78,7 +78,7 @@ const { data } = await useAsyncData('quote', async () => {
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div class="take-p">
-            <ContentRenderer :value="data.contact" :key="`contact-${key}`" />
+            <ContentRenderer :value="data.contact" :key="`contact-${locale}`" />
           </div>
           <div class="mx-auto">
             <a href="https://goo.gl/maps/CtiKGgPqpmpbyj2J9">

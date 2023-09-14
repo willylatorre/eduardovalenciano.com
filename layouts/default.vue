@@ -49,7 +49,9 @@ const switchLocalePath = useSwitchLocalePath()
             </div>
             <div class="text-xs text-right">
               <NuxtLink :to="switchLocalePath('es')">ES</NuxtLink> |
-              <NuxtLink :to="switchLocalePath('ca')">CA</NuxtLink>
+              <NuxtLink :to="switchLocalePath('ca')">CA</NuxtLink> |
+               <NuxtLink :to="switchLocalePath('en')">EN</NuxtLink> |
+                <NuxtLink :to="switchLocalePath('fr')">FR</NuxtLink>
             </div>
           </div>
         </nav>
