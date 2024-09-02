@@ -43,7 +43,7 @@ const { data } = await useAsyncData('services-' + locale.value, async () => {
       </div>
     </div>
 
-    <div class="mx-auto my-10 max-w-[600px]">
+    <div class="mx-auto my-10 max-w-[600px] w-[90%] px-2">
       <h4 class="text-primary ds-serif text-sm mb-2 uppercase">{{ t('listOfServices') }}</h4>
       <div class="border border-background rounded p-4 text-sm">
         <ContentRenderer :value="data.services" :key="`services-${locale}`" class="content" />
@@ -75,36 +75,24 @@ const { data } = await useAsyncData('services-' + locale.value, async () => {
 
 <i18n lang="json">{
   "es": {
-    "pages.title": "Eduardo Valenciano Mendoza, psicólogo",
-    "take": "Abordaje terapéutico",
+    "pages.title": "Eduardo Valenciano Mendoza, psicólogo - Servicios",
     "services": "Servicios",
-    "about": "ACERCA DE MI",
-    "contact": "Contacto",
     "listOfServices": "Lista de servicios"
   },
   "ca": {
-    "pages.title": "Eduardo Valenciano Mendoza, psicòleg",
-    "take": "Inici",
+    "pages.title": "Eduardo Valenciano Mendoza, psicòleg - Serveis",
     "services": "Serveis",
-    "about": "SOBRE MI",
-    "contact": "Contacte",
     "listOfServices": "Llista de serveis"
   },
   "en": {
-    "pages.title": "Eduardo Valenciano Mendoza, psicòleg",
-    "take": "Inici",
-    "services": "Serveis",
-    "about": "ABOUT ME",
-    "contact": "Contacte",
-    "listOfServices": "Llista de serveis"
+    "pages.title": "Eduardo Valenciano Mendoza, psicòleg - Services",
+    "services": "Services",
+    "listOfServices": "List of services"
   },
   "fr": {
-    "pages.title": "Eduardo Valenciano Mendoza, psicòleg",
-    "take": "Inici",
-    "services": "Serveis",
-    "about": "SOBRE MI",
-    "contact": "Contacte",
-    "listOfServices": "Llista de serveis"
+    "pages.title": "Eduardo Valenciano Mendoza, psychologue - Services",
+    "services": "Services",
+    "listOfServices": "Liste des services"
   }
 }</i18n>
 
