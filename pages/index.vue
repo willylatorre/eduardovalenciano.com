@@ -4,24 +4,20 @@ definePageMeta({
   image: 'https://eduardovalenciano.com/img/eduardo.jpg'
 })
 const { locale, t } = useI18n()
-const { data } = await useAsyncData('quote', async () => {
-  const [quote, cv, services, take, contact] = await Promise.all([
+console.log(locale.value)
+const { data } = await useAsyncData('index-' + locale.value, async () => {
+  const [quote, intro, contact] = await Promise.all([
     queryContent(locale.value, 'quote').findOne(),
-    queryContent(locale.value, 'cv').findOne(),
-    queryContent(locale.value, 'services').findOne(),
-    queryContent(locale.value, 'take').findOne(),
+    queryContent(locale.value, 'intro').findOne(),
     queryContent(locale.value, 'contact').findOne()
   ])
 
   return {
     quote,
-    cv,
-    services,
-    take,
+    intro,
     contact
   }
 })
-
 </script>
 
 <template>
@@ -35,6 +31,12 @@ const { data } = await useAsyncData('quote', async () => {
         <img src="/img/foto1.jpg" width="100%" alt="Eduardo Valenciano"
           class="w-[90vw] md:w-[50vw] lg:w-400px rounded overflow-hidden max-w-[400px]" />
       </div>
+    </div>
+
+    <div class="w-[70vw] text-balanced mx-auto leading-relaxed border-l border-primary border-l-4 pl-4 my-10">
+
+      <ContentRenderer :value="data.intro" :key="`intro-${locale}`" class="content" />
+
     </div>
 
     <div class="bg-background px-4 py-12" id="contact">
@@ -67,7 +69,7 @@ const { data } = await useAsyncData('quote', async () => {
     "services": "Servicios",
     "about": "ACERCA DE MI",
     "contact": "Contacto",
-    "listOfServices": "Lista de servicios"
+    "listOfServices": "Lista de servicios",
   },
   "ca": {
     "pages.title": "Eduardo Valenciano Mendoza, psicòleg",
@@ -91,7 +93,7 @@ const { data } = await useAsyncData('quote', async () => {
     "services": "Serveis",
     "about": "SOBRE MI",
     "contact": "Contacte",
-    "listOfServices": "Llista de serveis"
+    "listOfServices": "Llista de serveis",
   }
 }</i18n>
 
@@ -101,23 +103,5 @@ const { data } = await useAsyncData('quote', async () => {
 li {
   line-height: 1.75rem;
   margin-right: 24px;
-}
-
-.cv-list ul {
-  list-style: circle;
-  columns: 2;
-
-  @media screen and (max-width: 768px) {
-    columns: 1;
-    list-style-position: inside;
-  }
-}
-
-.take-p p {
-  padding-bottom: 12px;
-}
-
-.take-p a {
-  text-decoration: underline;
 }
 </style>

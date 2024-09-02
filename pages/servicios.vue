@@ -4,18 +4,14 @@ definePageMeta({
   image: 'https://eduardovalenciano.com/img/eduardo.jpg'
 })
 const { locale, t } = useI18n()
-const { data } = await useAsyncData('quote', async () => {
-  const [quote, cv, services, take, contact] = await Promise.all([
-    queryContent(locale.value, 'quote').findOne(),
-    queryContent(locale.value, 'cv').findOne(),
+const { data } = await useAsyncData('services-' + locale.value, async () => {
+  const [services, take, contact] = await Promise.all([
     queryContent(locale.value, 'services').findOne(),
     queryContent(locale.value, 'take').findOne(),
     queryContent(locale.value, 'contact').findOne()
   ])
 
   return {
-    quote,
-    cv,
     services,
     take,
     contact

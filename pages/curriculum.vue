@@ -4,20 +4,14 @@ definePageMeta({
   image: 'https://eduardovalenciano.com/img/eduardo.jpg'
 })
 const { locale, t } = useI18n()
-const { data } = await useAsyncData('quote', async () => {
-  const [quote, cv, services, take, contact] = await Promise.all([
-    queryContent(locale.value, 'quote').findOne(),
+const { data } = await useAsyncData('cv-' + locale.value, async () => {
+  const [cv, contact] = await Promise.all([
     queryContent(locale.value, 'cv').findOne(),
-    queryContent(locale.value, 'services').findOne(),
-    queryContent(locale.value, 'take').findOne(),
     queryContent(locale.value, 'contact').findOne()
   ])
 
   return {
-    quote,
     cv,
-    services,
-    take,
     contact
   }
 })
@@ -63,36 +57,20 @@ const { data } = await useAsyncData('quote', async () => {
 
 <i18n lang="json">{
   "es": {
-    "pages.title": "Eduardo Valenciano Mendoza, psicólogo",
-    "take": "Abordaje terapéutico",
-    "services": "Servicios",
-    "about": "ACERCA DE MI",
-    "contact": "Contacto",
-    "listOfServices": "Lista de servicios"
+    "pages.title": "Eduardo Valenciano Mendoza, psicólogo - Curriculum",
+    "contact": "Contacto"
   },
   "ca": {
-    "pages.title": "Eduardo Valenciano Mendoza, psicòleg",
-    "take": "Inici",
-    "services": "Serveis",
-    "about": "SOBRE MI",
-    "contact": "Contacte",
-    "listOfServices": "Llista de serveis"
+    "pages.title": "Eduardo Valenciano Mendoza, psicòleg - Curriculum",
+    "contact": "Contacte"
   },
   "en": {
-    "pages.title": "Eduardo Valenciano Mendoza, psicòleg",
-    "take": "Inici",
-    "services": "Serveis",
-    "about": "ABOUT ME",
-    "contact": "Contacte",
-    "listOfServices": "Llista de serveis"
+    "pages.title": "Eduardo Valenciano Mendoza, psicòleg - Curriculum",
+    "contact": "Contacte"
   },
   "fr": {
-    "pages.title": "Eduardo Valenciano Mendoza, psicòleg",
-    "take": "Inici",
-    "services": "Serveis",
-    "about": "SOBRE MI",
-    "contact": "Contacte",
-    "listOfServices": "Llista de serveis"
+    "pages.title": "Eduardo Valenciano Mendoza, psicòleg - Curriculum",
+    "contact": "Contacte"
   }
 }</i18n>
 

@@ -2,6 +2,6 @@
 title: 'Quote - EN'
 ---
 
-**Clinical psychologist** and **doctor en Psicología Clínica** por la Universidad de
-Barcelona con experiencia asistencial e investigadora en la red pública de salud mental y
-adicciones
+**Psychologist** and **Doctor in Clinical Psychology** from the
+University of Barcelona with clinical and research experience
+in the public mental health and addictions network as well as in private practice

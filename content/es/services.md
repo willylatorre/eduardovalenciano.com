@@ -12,3 +12,4 @@ title: Services - ES
 - Crisis vitales
 - Dificultades para gestionar el estrés
 - Dificultades para regular las emociones
+- Terapia en castellano, catalán, inglés y francés de forma presencial en Barcelona o en formato online.

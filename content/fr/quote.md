@@ -2,6 +2,6 @@
 title: 'Cita - ES'
 ---
 
-**Psicólogo sanitario** y **doctor en Psicología Clínica** por la Universidad de
-Barcelona con experiencia asistencial e investigadora en la red pública de salud mental y
-adicciones
+**Psychologue** et **Docteur en Psychologie Clinique** de l'
+Université de Barcelone avec une expérience clinique et de recherche
+dans le réseau public de santé mentale et des addictions ainsi que dans la pratique privée

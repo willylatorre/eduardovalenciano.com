@@ -15,11 +15,14 @@ export default defineNuxtConfig({
       { rel: "mask-icon", href: "/safari-pinned-tab.svg", color: "#5bbad5" }
     ],
   },
+
   css: ['~/assets/css/main.css'],
+
   modules: [
     '@nuxtjs/i18n',
     '@nuxt/content',
   ],
+
   i18n: {
     strategy: 'prefix_except_default',
     locales: [
@@ -64,13 +67,17 @@ export default defineNuxtConfig({
       },
     }
   },
+
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   },
+
   experimental: {
     payloadExtraction: false
-  }
+  },
+
+  compatibilityDate: '2024-09-02'
 })
