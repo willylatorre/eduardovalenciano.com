@@ -7,8 +7,8 @@ pondré en contacto lo antes posible.
 
 
 - Consulta en Barcelona
-- [C/ del Consell de Cent, 355 4º2ª (esquina con Paseo de Gracia)](https://goo.gl/maps/CtiKGgPqpmpbyj2J9)
-- 08007 Barcelona
+- [Ronda del General Mitre 164 1º1ª)](https://maps.app.goo.gl/Hf2BuXZfGD6amCMY8)
+- 08006 Barcelona
 - <evalenciano@copc.cat>
 - <a href="tel:+34689259702">Tel. +34 689 25 97 02</a>
  

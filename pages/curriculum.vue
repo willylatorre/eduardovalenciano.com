@@ -85,10 +85,30 @@ li {
 .cv-list ul {
   list-style: circle;
   columns: 2;
+  padding: 0 16px;
 
   @media screen and (max-width: 768px) {
     columns: 1;
     list-style-position: inside;
+  }
+}
+
+.cv-list p {
+  padding-bottom: 12px;
+}
+
+.cv-list {
+  h2 {
+    margin-top: 48px;
+    margin-bottom: 12px;
+    /* text-decoration: underline; */
+    width: 100%;
+    border-bottom: 1px solid grey;
+    padding-bottom: 6px;
+
+    &:first-child {
+      margin-top: 0;
+    }
   }
 }
 

@@ -1,14 +1,12 @@
 ---
-title: 'Contact - ES'
+title: 'Contact - FR'
 ---
 
-Puedes enviarme un mensaje de <a href="https://api.whatsapp.com/send?phone=689259702">WhatsApp</a>, [Linkedin](https://www.linkedin.com/in/eduardovalencianomendoza/) o un email. Me
-pondré en contacto lo antes posible.
+Vous pouvez m'envoyer un message via <a href="https://api.whatsapp.com/send?phone=689259702">WhatsApp</a>, [Linkedin](https://www.linkedin.com/in/eduardovalencianomendoza/) ou un email. Je
+vous contacterai dès que possible.
 
-
-- Consulta en Barcelona
-- [C/ del Consell de Cent, 355 4º2ª (esquina con Paseo de Gracia)](https://goo.gl/maps/CtiKGgPqpmpbyj2J9)
-- 08007 Barcelona
+- Consultation à Barcelone
+- [Ronda del General Mitre 164 1º1ª](https://maps.app.goo.gl/Hf2BuXZfGD6amCMY8)
+- 08006 Barcelone
 - <evalenciano@copc.cat>
-- <a href="tel:+34689259702">Tel. +34 689 25 97 02</a>
- 
+- <a href="tel:+34689259702">Tél. +34 689 25 97 02</a>
