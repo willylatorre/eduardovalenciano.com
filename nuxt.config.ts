@@ -59,7 +59,7 @@ export default defineNuxtConfig({
         es: '/curriculum',
         ca: '/curriculum'
       },
-      services: {
+      servicios: {
         en: '/services',
         fr: '/services',
         es: '/servicios',
