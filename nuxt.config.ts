@@ -1,3 +1,5 @@
+import type Curriculum from "./pages/curriculum.vue";
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   head: {
@@ -6,11 +8,11 @@ export default defineNuxtConfig({
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel:"apple-touch-icon", sizes:"180x180", href:"/apple-touch-icon.png" },
-      { rel:"icon", type:"image/png", sizes:"32x32", href:"/favicon-32x32.png" },
-      { rel:"icon", type:"image/png", sizes:"16x16", href:"/favicon-16x16.png" },
-      { rel:"manifest", href:"/site.webmanifest" },
-      { rel:"mask-icon", href:"/safari-pinned-tab.svg", color:"#5bbad5" }
+      { rel: "apple-touch-icon", sizes: "180x180", href: "/apple-touch-icon.png" },
+      { rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon-32x32.png" },
+      { rel: "icon", type: "image/png", sizes: "16x16", href: "/favicon-16x16.png" },
+      { rel: "manifest", href: "/site.webmanifest" },
+      { rel: "mask-icon", href: "/safari-pinned-tab.svg", color: "#5bbad5" }
     ],
   },
   css: ['~/assets/css/main.css'],
@@ -40,6 +42,27 @@ export default defineNuxtConfig({
     ],
     baseUrl: 'https://eduardovalenciano.com',
     defaultLocale: 'es',
+    customRoutes: 'config', // disable custom route with page components
+    pages: {
+      index: {
+        en: '/',
+        fr: '/',
+        es: '/',
+        ca: '/'
+      },
+      curriculum: {
+        en: '/curriculum',
+        fr: '/curriculums',
+        es: '/curriculum',
+        ca: '/curriculum'
+      },
+      services: {
+        en: '/services',
+        fr: '/services',
+        es: '/servicios',
+        ca: '/serveis'
+      },
+    }
   },
   postcss: {
     plugins: {
