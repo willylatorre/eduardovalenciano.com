@@ -6,10 +6,7 @@ definePageMeta({
 
 const { locale, t } = useI18n()
 
-defineOgImageComponent('EduardoValenciano', {
-  title: t('pages.title'),
-  description: '',
-})
+
 const { data } = await useAsyncData('services-' + locale.value, async () => {
   const [services, take, contact] = await Promise.all([
     queryContent(locale.value, 'services').findOne(),
