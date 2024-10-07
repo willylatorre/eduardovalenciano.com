@@ -1,9 +1,15 @@
 <script setup>
 definePageMeta({
   title: 'pages.title', // set resource key,
-  image: 'https://eduardovalenciano.com/img/eduardo.jpg'
+  image: 'https://eduardovalenciano.com/img/foto1.jpg',
 })
+
 const { locale, t } = useI18n()
+defineOgImageComponent('NuxtSeo', {
+  title: t('pages.title'),
+  description: '',
+})
+
 const { data } = await useAsyncData('index-' + locale.value, async () => {
   const [quote, intro, contact] = await Promise.all([
     queryContent(locale.value, 'quote').findOne(),

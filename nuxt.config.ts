@@ -12,10 +12,11 @@ export default defineNuxtConfig({
       { rel: "mask-icon", href: "/safari-pinned-tab.svg", color: "#5bbad5" }
     ],
   },
+  devtools: { enabled: true },
 
   css: ['~/assets/css/main.css'],
 
-  modules: ['@nuxtjs/i18n', '@nuxt/content', '@nuxtjs/sitemap', '@nuxtjs/robots'],
+  modules: ['@nuxtjs/i18n', '@nuxt/content', '@nuxtjs/sitemap', '@nuxtjs/robots', 'nuxt-og-image'],
 
   i18n: {
     strategy: 'prefix_except_default',
@@ -76,6 +77,20 @@ export default defineNuxtConfig({
   site: {
     url: 'https://eduardovalenciano.com',
     name: 'Eduardo Valenciano Mendoza, psicólogo'
+  },
+  robots: {
+    // allow: ['/api/og/*']
+  },
+
+  vite: {
+    server: {
+      cors: true,
+      hmr: {
+        protocol: 'wss',
+        clientPort: process.env.CODESPACES ? 443 : undefined,
+        host: "https://expert-barnacle-5vw5gjqwq9h4xvj-3000.app.github.dev"
+      }
+    }
   },
 
   compatibilityDate: '2024-09-02'
