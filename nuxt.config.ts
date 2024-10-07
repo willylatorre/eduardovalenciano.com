@@ -1,6 +1,3 @@
-import type Curriculum from "./pages/curriculum.vue";
-
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   head: {
     meta: [
