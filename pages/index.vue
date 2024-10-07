@@ -82,20 +82,20 @@ const { data } = await useAsyncData('index-' + locale.value, async () => {
     "listOfServices": "Llista de serveis"
   },
   "en": {
-    "pages.title": "Eduardo Valenciano Mendoza, psicòleg",
-    "take": "Inici",
-    "services": "Serveis",
+    "pages.title": "Eduardo Valenciano Mendoza, psychologist",
+    "take": "Start",
+    "services": "Services",
     "about": "ABOUT ME",
-    "contact": "Contacte",
-    "listOfServices": "Llista de serveis"
+    "contact": "Contact",
+    "listOfServices": "List of services"
   },
   "fr": {
-    "pages.title": "Eduardo Valenciano Mendoza, psicòleg",
-    "take": "Inici",
-    "services": "Serveis",
-    "about": "SOBRE MI",
-    "contact": "Contacte",
-    "listOfServices": "Llista de serveis",
+    "pages.title": "Eduardo Valenciano Mendoza, psychologue",
+    "take": "Début",
+    "services": "Services",
+    "about": "À PROPOS DE MOI",
+    "contact": "Contact",
+    "listOfServices": "Liste des services"
   }
 }</i18n>
 

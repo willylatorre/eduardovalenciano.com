@@ -18,10 +18,7 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
 
-  modules: [
-    '@nuxtjs/i18n',
-    '@nuxt/content',
-  ],
+  modules: ['@nuxtjs/i18n', '@nuxt/content', '@nuxtjs/sitemap', '@nuxtjs/robots'],
 
   i18n: {
     strategy: 'prefix_except_default',
@@ -77,6 +74,11 @@ export default defineNuxtConfig({
 
   experimental: {
     payloadExtraction: false
+  },
+
+  site: {
+    url: 'https://eduardovalenciano.com',
+    name: 'Eduardo Valenciano Mendoza, psicólogo'
   },
 
   compatibilityDate: '2024-09-02'
