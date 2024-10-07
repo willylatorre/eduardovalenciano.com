@@ -5,10 +5,6 @@ definePageMeta({
 })
 
 const { locale, t } = useI18n()
-defineOgImageComponent('NuxtSeo', {
-  title: t('pages.title'),
-  description: '',
-})
 
 const { data } = await useAsyncData('index-' + locale.value, async () => {
   const [quote, intro, contact] = await Promise.all([

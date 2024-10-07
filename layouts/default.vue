@@ -14,11 +14,6 @@ const showMenu = () => {
   menuShown.value = true
 }
 
-defineOgImageComponent('NuxtSeo', {
-  title: t('pages.title'),
-  description: '',
-})
-
 const hideMenu = () => {
   menuShown.value = false
 }
