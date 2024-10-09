@@ -97,6 +97,7 @@ useJsonld(() => ({
       <Meta id="og:image:type" property="og:image:type" content="image/jpeg" />
       <Meta id="og:url" property="og:url" content="https://eduardovalenciano.com" />
       <Meta id="twitter:card" property="twitter:card" content="summary" />
+      <link rel="preconnect" href="https://fonts.gstatic.com/">
     </Head>
 
     <Body>
