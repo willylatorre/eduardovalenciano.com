@@ -24,21 +24,22 @@ export default defineNuxtConfig({
     strategy: 'prefix_except_default',
     locales: [
       {
-        code: 'es',
-        iso: 'es-ES'
-      },
-      {
         code: 'ca',
         iso: 'ca'
       },
       {
         code: 'en',
-        iso: 'en-US',
+        language: 'en-US'
       },
       {
         code: 'fr',
         iso: 'fr'
-      }
+      },
+      {
+        code: 'es',
+        language: 'es-ES',
+        isCatchallLocale: true
+      },
     ],
     baseUrl: 'https://eduardovalenciano.com',
     defaultLocale: 'es',

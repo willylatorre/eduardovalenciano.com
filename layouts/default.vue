@@ -83,7 +83,6 @@ useJsonld(() => ({
       <template v-for="meta in head.meta" :key="meta.id">
         <Meta :id="meta.id" :property="meta.property" :content="meta.content" />
       </template>
-      <Meta id="title" name="title" property="og:title" :content="t('title')" />
       <Meta id="twitter:title" name="title" property="twitter:title" :content="t('title')" />
       <Meta id="sitename" property="og:site_name" :content="t('title')" />
       <Meta id="description" name="description" propery="description" :content="t('description')" />
