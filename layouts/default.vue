@@ -65,7 +65,6 @@ useJsonld(() => ({
     ]
   },
   "image": "https://eduardovalenciano.com/img/foto1.webp",
-  "priceRange": "$",
   "@id": "https://www.eduardovalenciano.com#person"
 }));
 
