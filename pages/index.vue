@@ -27,7 +27,7 @@ const { data } = await useAsyncData('index-' + locale.value, async () => {
       class="flex flex-col md:flex-row items-center gap-8 justify-between ds-wrapper pb-12 px-4 pt-12 md:pt-0">
       <div class="text-xl md:text-2xl flex flex-col justify-start md:justify-center max-w-[500px]">
         <span class="text-primary ds-serif text-sm mb-2">{{ t('about') }}</span>
-        <ContentRenderer :value="data.quote" :key="`quote-${locale}`" />
+        <ContentRenderer :value="data?.quote" :key="`quote-${locale}`" />
       </div>
       <div class="self-center md:self-auto">
         <img src="/img/foto1.jpg" width="100%" alt="Eduardo Valenciano"
@@ -37,7 +37,7 @@ const { data } = await useAsyncData('index-' + locale.value, async () => {
 
     <div class="w-[70vw] text-balanced mx-auto leading-relaxed border-l border-primary border-l-4 pl-4 my-10">
 
-      <ContentRenderer :value="data.intro" :key="`intro-${locale}`" class="content" />
+      <ContentRenderer :value="data?.intro" :key="`intro-${locale}`" class="content" />
 
     </div>
 
@@ -49,7 +49,7 @@ const { data } = await useAsyncData('index-' + locale.value, async () => {
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div class="take-p">
-            <ContentRenderer :value="data.contact" :key="`contact-${locale}`" />
+            <ContentRenderer :value="data?.contact" :key="`contact-${locale}`" />
           </div>
           <div class="mx-auto">
             <a href="https://maps.app.goo.gl/8qa814oqWYtY11Gk9">
