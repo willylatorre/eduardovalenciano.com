@@ -18,6 +18,57 @@ const hideMenu = () => {
   menuShown.value = false
 }
 
+useJsonld(() => ({
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Eduardo Valenciano Mendoza",
+  "jobTitle": t('psicologo'),
+  "affiliation": {
+    "@type": "Organization",
+    "name": "Doe Psychological Services"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Ronda del General Mitre 164, 1-1",
+    "addressLocality": "Barcelona",
+    "addressRegion": "Catalunya",
+    "postalCode": "08006",
+    "addressCountry": "ES"
+  },
+  "telephone": "+34689259702",
+  "email": "evalenciano@copc.cat",
+  "url": "https://eduardovalenciano.com",
+  "sameAs": [
+    "https://www.linkedin.com/in/eduardovalencianomendoza",
+  ],
+  "knowsAbout": [
+    "Cognitive Behavioral Therapy",
+    "Anxiety Disorders",
+    "Depression",
+    "Stress Management"
+  ],
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Universidad de Barcelona"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Psychological Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Individual Therapy"
+        }
+      }
+    ]
+  },
+  "image": "https://eduardovalenciano.com/img/foto1.webp",
+  "priceRange": "$",
+  "@id": "https://www.eduardovalenciano.com#person"
+}));
+
 
 </script>
 
@@ -33,14 +84,14 @@ const hideMenu = () => {
       <template v-for="meta in head.meta" :key="meta.id">
         <Meta :id="meta.id" :property="meta.property" :content="meta.content" />
       </template>
-      <Meta id="title" property="og:title" :content="t('title')" />
-      <Meta id="twitter:title" property="twitter:title" :content="t('title')" />
+      <Meta id="title" name="title" property="og:title" :content="t('title')" />
+      <Meta id="twitter:title" name="title" property="twitter:title" :content="t('title')" />
       <Meta id="sitename" property="og:site_name" :content="t('title')" />
-      <Meta id="description" property="description" :content="t('description')" />
+      <Meta id="description" name="description" propery="description" :content="t('description')" />
       <Meta id="twitter:description" property="twitter:description" :content="t('description')" />
-      <Meta id="og:description" property="og:description" :content="t('description')" />
-      <Meta id="og:description" property="og:type" content="website" />
-      <Meta id="og:description" property="og:description" :content="t('description')" />
+      <Meta id="og:description" name="description" property="og:description" :content="t('description')" />
+      <Meta id="og:type" property="og:type" content="website" />
+      <Meta id="og:description" name="description" property="og:description" :content="t('description')" />
       <Meta id="image" property="image" content="https://eduardovalenciano.com/img/foto1.jpg" />
       <Meta id="og:image" property="og:image" content="https://eduardovalenciano.com/img/foto1.jpg" />
       <Meta id="twitter:image" property="twitter:image" content="https://eduardovalenciano.com/img/foto1.jpg" />
