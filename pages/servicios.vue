@@ -38,7 +38,7 @@ const { data } = await useAsyncData('services-' + locale.value, async () => {
             <ContentRenderer :value="data.take" :key="`take-${locale}`" />
           </div>
           <div class="mx-auto">
-            <img src="/img/foto2.jpg" width="100%" alt="Eduardo Valenciano"
+            <img src="/img/foto2.jpg" width="100%" alt="Eduardo Valenciano" loading="lazy"
               class="w-[90vw] md:w-[50vw] lg:w-400px rounded overflow-hidden max-w-[400px]" />
           </div>
 
@@ -65,10 +65,13 @@ const { data } = await useAsyncData('services-' + locale.value, async () => {
           </div>
           <div class="mx-auto">
             <a href="https://maps.app.goo.gl/8qa814oqWYtY11Gk9">
-              <iframe class="max-w-[90vw] rounded overflow-hidden  w-[400px] h-[400px]"
+              <img width="400" height="400" class="max-w-[90vw] rounded overflow-hidden"
+                src="https://maps.googleapis.com/maps/api/staticmap?center=Ronda%20del%20General%20Mitre,%20164,%20Barcelona&zoom=15&size=400x400&markers=color:blue%7C41.3918997,2.1665775&key=AIzaSyCoEmBGQloGVYe_Y3tBBM9Favi42xLWMBE" />
+
+              <!-- <iframe class="max-w-[90vw] rounded overflow-hidden  w-[400px] h-[400px]" name="contact-map"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.6109523215296!2d2.1381640761317815!3d41.404254594948654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4980b9b4c59ff%3A0x51a43747ac90300!2sRonda%20del%20General%20Mitre%2C%20164%2C%20Sarri%C3%A0-Sant%20Gervasi%2C%2008006%20Barcelona%2C%20Spain!5e0!3m2!1sen!2snl!4v1725874743808!5m2!1sen!2snl"
                 width="4000" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                referrerpolicy="no-referrer-when-downgrade"></iframe> -->
             </a>
           </div>
         </div>
