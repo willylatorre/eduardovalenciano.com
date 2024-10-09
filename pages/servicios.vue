@@ -38,7 +38,7 @@ const { data } = await useAsyncData('services-' + locale.value, async () => {
             <ContentRenderer :value="data.take" :key="`take-${locale}`" />
           </div>
           <div class="mx-auto">
-            <img src="/img/foto2.jpg" width="100%" alt="Eduardo Valenciano" loading="lazy"
+            <img src="/img/foto2.jpg" width="100%" alt="Eduardo Valenciano"
               class="w-[90vw] md:w-[50vw] lg:w-400px rounded overflow-hidden max-w-[400px]" />
           </div>
 

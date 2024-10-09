@@ -30,7 +30,7 @@ const { data } = await useAsyncData('index-' + locale.value, async () => {
         <ContentRenderer :value="data?.quote" :key="`quote-${locale}`" />
       </div>
       <div class="self-center md:self-auto">
-        <img src="/img/foto1.webp" width="400" alt="Eduardo Valenciano" loading="lazy"
+        <img src="/img/foto1.webp" width="400" alt="Eduardo Valenciano"
           class="w-[90vw] md:w-[50vw] lg:w-400px rounded overflow-hidden max-w-[400px]" />
       </div>
     </div>
