@@ -98,6 +98,14 @@ useJsonld(() => ({
       <Meta id="og:url" property="og:url" content="https://eduardovalenciano.com" />
       <Meta id="twitter:card" property="twitter:card" content="summary" />
       <link rel="preconnect" href="https://fonts.gstatic.com/">
+      <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Poppins:wght@300;400&display=swap"
+        as="style" onload="this.onload=null;this.rel='stylesheet'" />
+      <noscript>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Poppins:wght@300;400&display=swap"
+          rel="stylesheet" type="text/css" />
+      </noscript>
     </Head>
 
     <Body>
