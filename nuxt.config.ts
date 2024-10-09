@@ -24,8 +24,13 @@ export default defineNuxtConfig({
     strategy: 'prefix_except_default',
     locales: [
       {
+        code: 'es',
+        language: 'es-ES',
+        isCatchallLocale: true
+      },
+      {
         code: 'ca',
-        iso: 'ca'
+        language: 'ca'
       },
       {
         code: 'en',
@@ -33,16 +38,16 @@ export default defineNuxtConfig({
       },
       {
         code: 'fr',
-        iso: 'fr'
-      },
-      {
-        code: 'es',
-        language: 'es-ES',
-        isCatchallLocale: true
+        language: 'fr'
       },
     ],
     baseUrl: 'https://eduardovalenciano.com',
     defaultLocale: 'es',
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      redirectOn: 'root' // recommended
+    },
     customRoutes: 'config', // disable custom route with page components
     pages: {
       index: {
@@ -63,7 +68,8 @@ export default defineNuxtConfig({
         es: '/servicios',
         ca: '/serveis'
       },
-    }
+    },
+    vueI18n: './i18n.config.ts'
   },
 
   postcss: {
