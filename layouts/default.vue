@@ -100,7 +100,9 @@ const hideMenu = () => {
             </div>
           </div>
         </nav>
-        <slot />
+        <main>
+          <slot />
+        </main>
         <footer class="bg-background">
           <div class="ds-wrapper flex items-center justify-center min-h-[100px] text-xs">
             Eduardo Valenciano Mendoza &copy; 2023 |&nbsp; <a href="mailto:evalenciano@copc.cat">{{ t('contact') }}</a>

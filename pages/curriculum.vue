@@ -44,8 +44,9 @@ const { data } = await useAsyncData('cv-' + locale.value, async () => {
             <ContentRenderer :value="data.contact" :key="`contact-${locale}`" />
           </div>
           <div class="mx-auto">
-            <a href="https://maps.app.goo.gl/8qa814oqWYtY11Gk9">
+            <a href="https://maps.app.goo.gl/8qa814oqWYtY11Gk9" aria-label="Check the office location map link">
               <img width="400" height="400" class="max-w-[90vw] rounded overflow-hidden"
+                alt="Mapa de la ubicación de Eduardo Valenciano Mendoza, psicólogo"
                 src="https://maps.googleapis.com/maps/api/staticmap?center=Ronda%20del%20General%20Mitre,%20164,%20Barcelona&zoom=15&size=400x400&markers=color:blue%7C41.3918997,2.1665775&key=AIzaSyCoEmBGQloGVYe_Y3tBBM9Favi42xLWMBE" />
 
               <!-- <iframe class="max-w-[90vw] rounded overflow-hidden  w-[400px] h-[400px]" name="contact-map"
