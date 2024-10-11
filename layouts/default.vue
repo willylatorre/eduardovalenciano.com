@@ -128,10 +128,10 @@ useJsonld(() => ({
             </div>
 
             <div class="text-sm text-right text-primary">
-              <NuxtLink :to="switchLocalePath('es')">ES</NuxtLink> |
+              <!-- <NuxtLink :to="switchLocalePath('es')">ES</NuxtLink> |
               <NuxtLink :to="switchLocalePath('ca')">CA</NuxtLink> |
               <NuxtLink :to="switchLocalePath('en')">EN</NuxtLink> |
-              <NuxtLink :to="switchLocalePath('fr')">FR</NuxtLink>
+              <NuxtLink :to="switchLocalePath('fr')">FR</NuxtLink> -->
             </div>
           </div>
 
@@ -151,10 +151,10 @@ useJsonld(() => ({
             </div>
 
             <div class="mx-auto text-center">
-              <NuxtLink :to="switchLocalePath('es')">ES</NuxtLink> |
+              <!--  <NuxtLink :to="switchLocalePath('es')">ES</NuxtLink> |
               <NuxtLink :to="switchLocalePath('ca')">CA</NuxtLink> |
               <NuxtLink :to="switchLocalePath('en')">EN</NuxtLink> |
-              <NuxtLink :to="switchLocalePath('fr')">FR</NuxtLink>
+              <NuxtLink :to="switchLocalePath('fr')">FR</NuxtLink> -->
             </div>
           </div>
         </nav>
