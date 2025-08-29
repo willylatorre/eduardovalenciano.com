@@ -3,20 +3,16 @@ definePageMeta({
   title: 'pages.title', // set resource key,
   image: 'https://eduardovalenciano.com/img/foto1.jpg'
 })
-
 const { locale, t } = useI18n()
 
-
-const { data } = await useAsyncData('services-' + locale.value, async () => {
-  const [services, take, contact] = await Promise.all([
-    queryContent(locale.value, 'services').findOne(),
-    queryContent(locale.value, 'take').findOne(),
+const { data } = await useAsyncData('cv-' + locale.value, async () => {
+  const [cv, contact] = await Promise.all([
+    queryContent(locale.value, 'cv').findOne(),
     queryContent(locale.value, 'contact').findOne()
   ])
 
   return {
-    services,
-    take,
+    cv,
     contact
   }
 })
@@ -25,31 +21,15 @@ const { data } = await useAsyncData('services-' + locale.value, async () => {
 
 <template>
   <div>
-
-    <div class="bg-white px-4 py-12" id="services">
+    <div class="px-4 py-12" id="curriculum">
       <div class="ds-wrapper">
         <h2 class="ds-serif text-2xl mb-8">
-          {{ t('services') }}
+          Curriculum
         </h2>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div class="take-p">
-            <h4 class="text-primary ds-serif text-sm mb-2 uppercase">{{ t('take') }}</h4>
-            <ContentRenderer :value="data.take" :key="`take-${locale}`" />
-          </div>
-          <div class="mx-auto">
-            <img src="/img/foto2.jpg" width="100%" alt="Eduardo Valenciano"
-              class="w-[90vw] md:w-[50vw] lg:w-400px rounded overflow-hidden max-w-[400px]" />
-          </div>
-
+        <div class="flex flex-wrap gap-4 cv-list">
+          <ContentRenderer :value="data.cv" :key="`cv-${locale}`" />
         </div>
-      </div>
-    </div>
-
-    <div class="mx-auto my-10 max-w-[600px] w-[90%] px-2">
-      <h4 class="text-primary ds-serif text-sm mb-2 uppercase">{{ t('listOfServices') }}</h4>
-      <div class="border border-background rounded p-4 text-sm">
-        <ContentRenderer :value="data.services" :key="`services-${locale}`" class="content" />
       </div>
     </div>
 
@@ -65,11 +45,11 @@ const { data } = await useAsyncData('services-' + locale.value, async () => {
           </div>
           <div class="mx-auto">
             <a href="https://maps.app.goo.gl/8qa814oqWYtY11Gk9" aria-label="Check the office location map link">
-              <img width="400" height="400" class="max-w-[90vw] rounded overflow-hidden"
+              <img width="400" height="400" class="max-w-[90vw] rounded-sm overflow-hidden"
                 alt="Mapa de la ubicación de Eduardo Valenciano Mendoza, psicólogo"
                 src="https://maps.googleapis.com/maps/api/staticmap?center=Ronda%20del%20General%20Mitre,%20164,%20Barcelona&zoom=15&size=400x400&markers=color:blue%7C41.3918997,2.1665775&key=AIzaSyCoEmBGQloGVYe_Y3tBBM9Favi42xLWMBE" />
 
-              <!-- <iframe class="max-w-[90vw] rounded overflow-hidden  w-[400px] h-[400px]" name="contact-map"
+              <!-- <iframe class="max-w-[90vw] rounded-sm overflow-hidden  w-[400px] h-[400px]" name="contact-map"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.6109523215296!2d2.1381640761317815!3d41.404254594948654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4980b9b4c59ff%3A0x51a43747ac90300!2sRonda%20del%20General%20Mitre%2C%20164%2C%20Sarri%C3%A0-Sant%20Gervasi%2C%2008006%20Barcelona%2C%20Spain!5e0!3m2!1sen!2snl!4v1725874743808!5m2!1sen!2snl"
                 width="4000" height="400" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe> -->
@@ -84,32 +64,20 @@ const { data } = await useAsyncData('services-' + locale.value, async () => {
 
 <i18n lang="json">{
   "es": {
-    "pages.title": "Eduardo Valenciano Mendoza, psicólogo - Servicios",
-    "services": "Servicios",
-    "take": "Abordaje terapéutico",
-    "listOfServices": "Lista de servicios",
+    "pages.title": "Eduardo Valenciano Mendoza, psicólogo - Curriculum",
     "contact": "Contacto"
   },
   "ca": {
-    "pages.title": "Eduardo Valenciano Mendoza, psicòleg - Serveis",
-    "services": "Serveis",
-    "take": "Abordatge terapèutic",
-    "listOfServices": "Llista de serveis",
+    "pages.title": "Eduardo Valenciano Mendoza, psicòleg - Curriculum",
     "contact": "Contacte"
   },
   "en": {
-    "pages.title": "Eduardo Valenciano Mendoza, psicòleg - Services",
-    "services": "Services",
-    "take": "Therapeutic approach",
-    "listOfServices": "List of services",
-    "contact": "Contact"
+    "pages.title": "Eduardo Valenciano Mendoza, psicòleg - Curriculum",
+    "contact": "Contacte"
   },
   "fr": {
-    "pages.title": "Eduardo Valenciano Mendoza, psychologue - Services",
-    "services": "Services",
-    "take": "Approche thérapeutique",
-    "listOfServices": "Liste des services",
-    "contact": "Contact"
+    "pages.title": "Eduardo Valenciano Mendoza, psicòleg - Curriculum",
+    "contact": "Contacte"
   }
 }</i18n>
 
@@ -124,10 +92,30 @@ li {
 .cv-list ul {
   list-style: circle;
   columns: 2;
+  padding: 0 16px;
 
   @media screen and (max-width: 768px) {
     columns: 1;
     list-style-position: inside;
+  }
+}
+
+.cv-list p {
+  padding-bottom: 12px;
+}
+
+.cv-list {
+  h2 {
+    margin-top: 48px;
+    margin-bottom: 12px;
+    /* text-decoration: underline; */
+    width: 100%;
+    border-bottom: 1px solid grey;
+    padding-bottom: 6px;
+
+    &:first-child {
+      margin-top: 0;
+    }
   }
 }
 

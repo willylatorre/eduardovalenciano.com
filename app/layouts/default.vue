@@ -108,7 +108,7 @@ useJsonld(() => ({
     </Head>
 
     <Body>
-      <div class="bg-white min-h-[100vh]">
+      <div class="bg-white min-h-screen">
         <nav class="pt-8 md:pb-8 flex gap-6 justify-between align-center ds-wrapper px-4 md:px-0">
           <div>
             <!-- Desktop -->
@@ -135,7 +135,7 @@ useJsonld(() => ({
             </div>
           </div>
 
-          <div class="mobile bg-white h-[100dvh] w-[100dvw] p-10 fixed top-0 left-0 z-1 flex justify-between flex-col"
+          <div class="mobile bg-white h-dvh w-dvw p-10 fixed top-0 left-0 z-1 flex justify-between flex-col"
             v-if="menuShown" @click="hideMenu">
             <div class="flex justify-end w-full">
               <button @click="hideMenu" class="border-0 bg-transparent">
