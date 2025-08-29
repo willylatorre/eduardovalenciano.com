@@ -21,6 +21,11 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
 
   modules: ['@nuxtjs/i18n', '@nuxt/content', '@nuxtjs/sitemap', '@nuxtjs/robots', 'nuxt-jsonld'],
+  routeRules: {
+    '*': {
+      prerender: true
+    }
+  },
 
   i18n: {
     strategy: 'prefix_except_default',

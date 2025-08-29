@@ -1,5 +1,5 @@
-Sur cette page, vous trouverez une description de mon [parcours de formation et professionnel](/fr/curriculums) ainsi
-que des [services que j'offre](/fr/services) pour aborder divers problèmes et difficultés
+Sur cette page, vous trouverez une description de mon [parcours de formation et professionnel](/fr/curriculum) ainsi
+que des [services que j'offre](/fr/servicios) pour aborder divers problèmes et difficultés
 émotionnels et psychologiques.
 \
 \
