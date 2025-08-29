@@ -1,3 +1,5 @@
+import tailwindcss from "@tailwindcss/vite";
+
 export default defineNuxtConfig({
   app: {
     head: {
@@ -72,12 +74,6 @@ export default defineNuxtConfig({
     vueI18n: './i18n.config.ts'
   },
 
-  postcss: {
-    plugins: {
-      tailwindcss: {},
-      autoprefixer: {},
-    },
-  },
 
   experimental: {
     payloadExtraction: false
@@ -92,6 +88,9 @@ export default defineNuxtConfig({
   },
 
   vite: {
+    plugins: [
+      tailwindcss()
+    ],
     server: {
       cors: true,
       hmr: {

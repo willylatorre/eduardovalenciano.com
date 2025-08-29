@@ -6,16 +6,12 @@ definePageMeta({
 const { locale, t } = useI18n()
 
 const { data } = await useAsyncData('cv-' + locale.value, async () => {
-  const [cv, contact] = await Promise.all([
-    queryContent(locale.value, 'cv').findOne(),
-    queryContent(locale.value, 'contact').findOne()
-  ])
-
-  return {
-    cv,
-    contact
-  }
+  return queryCollection(locale.value).all()
 })
+
+
+const cv = computed(() => data.value.find(e => e.id.includes('cv')))
+const contact = computed(() => data.value.find(e => e.id.includes('contact')))
 
 </script>
 
@@ -28,7 +24,7 @@ const { data } = await useAsyncData('cv-' + locale.value, async () => {
         </h2>
 
         <div class="flex flex-wrap gap-4 cv-list">
-          <ContentRenderer :value="data.cv" :key="`cv-${locale}`" />
+          <ContentRenderer :value="cv" :key="`cv-${locale}`" />
         </div>
       </div>
     </div>
@@ -41,7 +37,7 @@ const { data } = await useAsyncData('cv-' + locale.value, async () => {
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div class="take-p">
-            <ContentRenderer :value="data.contact" :key="`contact-${locale}`" />
+            <ContentRenderer :value="contact" :key="`contact-${locale}`" />
           </div>
           <div class="mx-auto">
             <a href="https://maps.app.goo.gl/8qa814oqWYtY11Gk9" aria-label="Check the office location map link">

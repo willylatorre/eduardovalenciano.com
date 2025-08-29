@@ -6,20 +6,15 @@ definePageMeta({
 
 const { locale, t } = useI18n()
 
-
-const { data } = await useAsyncData('services-' + locale.value, async () => {
-  const [services, take, contact] = await Promise.all([
-    queryContent(locale.value, 'services').findOne(),
-    queryContent(locale.value, 'take').findOne(),
-    queryContent(locale.value, 'contact').findOne()
-  ])
-
-  return {
-    services,
-    take,
-    contact
-  }
+const { data } = await useAsyncData('index-' + locale.value, async () => {
+  return queryCollection(locale.value).all()
 })
+
+
+const services = computed(() => data.value.find(e => e.id.includes('services')))
+const take = computed(() => data.value.find(e => e.id.includes('take')))
+const contact = computed(() => data.value.find(e => e.id.includes('contact')))
+
 
 </script>
 
@@ -35,7 +30,7 @@ const { data } = await useAsyncData('services-' + locale.value, async () => {
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div class="take-p">
             <h4 class="text-primary ds-serif text-sm mb-2 uppercase">{{ t('take') }}</h4>
-            <ContentRenderer :value="data.take" :key="`take-${locale}`" />
+            <ContentRenderer :value="take" :key="`take-${locale}`" />
           </div>
           <div class="mx-auto">
             <img src="/img/foto2.jpg" width="100%" alt="Eduardo Valenciano"
@@ -49,7 +44,7 @@ const { data } = await useAsyncData('services-' + locale.value, async () => {
     <div class="mx-auto my-10 max-w-[600px] w-[90%] px-2">
       <h4 class="text-primary ds-serif text-sm mb-2 uppercase">{{ t('listOfServices') }}</h4>
       <div class="border border-background rounded-sm p-4 text-sm">
-        <ContentRenderer :value="data.services" :key="`services-${locale}`" class="content" />
+        <ContentRenderer :value="services" :key="`services-${locale}`" class="content" />
       </div>
     </div>
 
@@ -61,7 +56,7 @@ const { data } = await useAsyncData('services-' + locale.value, async () => {
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div class="take-p">
-            <ContentRenderer :value="data.contact" :key="`contact-${locale}`" />
+            <ContentRenderer :value="contact" :key="`contact-${locale}`" />
           </div>
           <div class="mx-auto">
             <a href="https://maps.app.goo.gl/8qa814oqWYtY11Gk9" aria-label="Check the office location map link">
