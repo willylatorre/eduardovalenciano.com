@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "nuxt dev --host",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
@@ -11,7 +11,7 @@
   "devDependencies": {
     "@nuxt/content": "^3.6.3",
     "@nuxt/devtools": "^1.5.2",
-    "@nuxtjs/i18n": "^8.5.1",
+    "@nuxtjs/i18n": "^10.0.6",
     "@nuxtjs/robots": "^5.5.1",
     "@nuxtjs/sitemap": "^7.4.3",
     "@types/node": "^18",

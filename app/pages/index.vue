@@ -92,7 +92,7 @@ const contact = computed(() => data.value.find(e => e.id.includes('contact')))
   },
   "fr": {
     "pages.title": "Eduardo Valenciano Mendoza, psychologue",
-    "take": "Début",
+    "take": "Acceuil",
     "services": "Services",
     "about": "À PROPOS DE MOI",
     "contact": "Contact",

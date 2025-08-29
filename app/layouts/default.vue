@@ -2,11 +2,7 @@
 // const route = useRoute()
 const { t } = useI18n()
 const localePath = useLocalePath()
-const head = useLocaleHead({
-  addDirAttribute: true,
-  identifierAttribute: 'id',
-  addSeoAttributes: true
-})
+const head = useLocaleHead()
 const switchLocalePath = useSwitchLocalePath()
 
 const menuShown = ref(false)
@@ -68,7 +64,6 @@ useJsonld(() => ({
   "@id": "https://www.eduardovalenciano.com#person"
 }));
 
-
 </script>
 
 <template>
@@ -128,10 +123,10 @@ useJsonld(() => ({
             </div>
 
             <div class="text-sm text-right text-primary">
-              <!-- <NuxtLink :to="switchLocalePath('es')">ES</NuxtLink> |
+              <NuxtLink :to="switchLocalePath('es')">ES</NuxtLink> |
               <NuxtLink :to="switchLocalePath('ca')">CA</NuxtLink> |
               <NuxtLink :to="switchLocalePath('en')">EN</NuxtLink> |
-              <NuxtLink :to="switchLocalePath('fr')">FR</NuxtLink> -->
+              <NuxtLink :to="switchLocalePath('fr')">FR</NuxtLink>
             </div>
           </div>
 
@@ -151,10 +146,10 @@ useJsonld(() => ({
             </div>
 
             <div class="mx-auto text-center">
-              <!--  <NuxtLink :to="switchLocalePath('es')">ES</NuxtLink> |
+              <NuxtLink :to="switchLocalePath('es')">ES</NuxtLink> |
               <NuxtLink :to="switchLocalePath('ca')">CA</NuxtLink> |
               <NuxtLink :to="switchLocalePath('en')">EN</NuxtLink> |
-              <NuxtLink :to="switchLocalePath('fr')">FR</NuxtLink> -->
+              <NuxtLink :to="switchLocalePath('fr')">FR</NuxtLink>
             </div>
           </div>
         </nav>
@@ -196,7 +191,7 @@ useJsonld(() => ({
   "fr": {
     "title": "Eduardo Valenciano Mendoza, psicòleg",
     "description": "Psychologue clinicien et docteur en psychologie clinique de l'Université de Barcelone avec une expérience clinique et de recherche dans le réseau public de santé mentale et de toxicomanie",
-    "home": "Début",
+    "home": "Acceuil",
     "psicologo": "Psychologue et docteur en psychologie clinique",
     "curriculum": "Curriculum",
     "services": "Services",
