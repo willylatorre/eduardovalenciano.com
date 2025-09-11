@@ -2,7 +2,7 @@
 title: 'Contact - ES'
 ---
 
-Puedes enviarme un mensaje de <a href="https://api.whatsapp.com/send?phone=689259702">WhatsApp</a>, [Linkedin](https://www.linkedin.com/in/eduardovalencianomendoza/) o un email. Me
+Puedes enviarme un mensaje de <a href="https://api.whatsapp.com/send?phone=689259702">WhatsApp</a> o un email. Me
 pondré en contacto lo antes posible.
 
 
