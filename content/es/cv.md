@@ -6,7 +6,7 @@ title: CV - ES
 ## FORMACIÓN ACADÉMICA
 - Licenciado en Psicología por la Universidad de Barcelona
 - Licenciado en Sociología por la Universidad Autónoma de Barcelona
-- Máster en Psicología General Sanitaria por la Universidad de Barcelona
+- Máster Oficial en Psicología General Sanitaria por la Universidad de Barcelona
 - Máster de Investigación en Sociología y Demografía por la Universidad Pompeu Fabra
 - Doctor en Psicología Clínica (Programa de Medicina e Investigación Translacional) por la Universidad de Barcelona. Investigación realizada en el Servicio de Psiquiatría del Hospital Universitari de Bellvitge.
 - Curso de Abnormal Psychology (University of Sussex, Reino Unido)
@@ -20,7 +20,7 @@ title: CV - ES
 - Psicólogo en consulta privada propia en Barcelona
 
 ## DOCENCIA E INVESTIGACIÓN
-- Profesor asociado de Psicología en Tecnocampus-UPF y en la Universitat Autònoma de Barcelona.
+- Profesor asociado de Psicología en Tecnocampus-UPF. Anteriormente profesor de Psicologíaen la Universitat Autònoma de Barcelona y en la Universitat Oberta de Catalunya.
 - Docente en cursos y masters universitarios
 - Acreditado como Profesor Lector por la Agència per a la Qualitat del Sistema Universitari de Catalunya (AQU)
 - Coautor de más de treinta publicaciones científicas en revistas de alto impacto en el campo de la psicología clínica y la psiquiatría
