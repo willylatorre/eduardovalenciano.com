@@ -22,7 +22,7 @@ export default defineNuxtConfig({
 
   modules: ['@nuxtjs/i18n', '@nuxt/content', '@nuxtjs/sitemap', '@nuxtjs/robots', 'nuxt-jsonld'],
   routeRules: {
-    '*': {
+    '**': {
       prerender: true
     }
   },
@@ -33,15 +33,15 @@ export default defineNuxtConfig({
       {
         code: 'es',
         language: 'es',
-        // isCatchallLocale: true
+        isCatchallLocale: true
       },
       {
         code: 'ca',
-        language: 'ca'
+      language: 'ca'
       },
       {
         code: 'en',
-        language: 'en-US'
+        language: 'en'
       },
       {
         code: 'fr',

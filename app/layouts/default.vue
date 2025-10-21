@@ -1,8 +1,8 @@
 <script setup>
-// const route = useRoute()
+const route = useRoute()
 const { t } = useI18n()
 const localePath = useLocalePath()
-const head = useLocaleHead()
+const head = useLocaleHead({ seo: {} })
 const switchLocalePath = useSwitchLocalePath()
 
 const menuShown = ref(false)
@@ -64,6 +64,21 @@ useJsonld(() => ({
   "@id": "https://www.eduardovalenciano.com#person"
 }));
 
+
+//  <Meta id="twitter:title" name="title" property="twitter:title" :content="t('title')" />
+//     <Meta id="sitename" property="og:site_name" :content="t('title')" />
+//     <Meta id="description" name="description" propery="description" :content="t('description')" />
+//     <Meta id="twitter:description" property="twitter:description" :content="t('description')" />
+//     <Meta id="og:description" name="description" property="og:description" :content="t('description')" />
+//     <Meta id="og:type" property="og:type" content="website" />
+//     <Meta id="og:description" name="description" property="og:description" :content="t('description')" />
+//     <Meta id="image" property="image" content="https://eduardovalenciano.com/img/foto1.jpg" />
+//     <Meta id="og:image" property="og:image" content="https://eduardovalenciano.com/img/foto1.jpg" />
+//     <Meta id="twitter:image" property="twitter:image" content="https://eduardovalenciano.com/img/foto1.jpg" />
+//     <Meta id="og:image:type" property="og:image:type" content="image/jpeg" />
+//     <Meta id="og:url" property="og:url" content="https://eduardovalenciano.com" />
+//     <Meta id="twitter:card" property="twitter:card" content="summary" />
+
 </script>
 
 <template>
@@ -78,19 +93,7 @@ useJsonld(() => ({
       <template v-for="meta in head.meta" :key="meta.id">
         <Meta :id="meta.id" :property="meta.property" :content="meta.content" />
       </template>
-      <Meta id="twitter:title" name="title" property="twitter:title" :content="t('title')" />
-      <Meta id="sitename" property="og:site_name" :content="t('title')" />
-      <Meta id="description" name="description" propery="description" :content="t('description')" />
-      <Meta id="twitter:description" property="twitter:description" :content="t('description')" />
-      <Meta id="og:description" name="description" property="og:description" :content="t('description')" />
-      <Meta id="og:type" property="og:type" content="website" />
-      <Meta id="og:description" name="description" property="og:description" :content="t('description')" />
-      <Meta id="image" property="image" content="https://eduardovalenciano.com/img/foto1.jpg" />
-      <Meta id="og:image" property="og:image" content="https://eduardovalenciano.com/img/foto1.jpg" />
-      <Meta id="twitter:image" property="twitter:image" content="https://eduardovalenciano.com/img/foto1.jpg" />
-      <Meta id="og:image:type" property="og:image:type" content="image/jpeg" />
-      <Meta id="og:url" property="og:url" content="https://eduardovalenciano.com" />
-      <Meta id="twitter:card" property="twitter:card" content="summary" />
+
       <link rel="preconnect" href="https://fonts.gstatic.com/">
       <link rel="preload"
         href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Poppins:wght@300;400&display=swap"
