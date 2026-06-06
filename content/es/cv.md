@@ -20,7 +20,7 @@ title: CV - ES
 - Psicólogo en consulta privada propia en Barcelona
 
 ## DOCENCIA E INVESTIGACIÓN
-- Profesor asociado de Psicología en Tecnocampus-UPF. Anteriormente profesor de Psicologíaen la Universitat Autònoma de Barcelona y en la Universitat Oberta de Catalunya.
+- Profesor asociado de Psicología en Tecnocampus-UPF. Anteriormente profesor de Psicología en la Universitat Autònoma de Barcelona y en la Universitat Oberta de Catalunya.
 - Docente en cursos y masters universitarios
 - Acreditado como Profesor Lector por la Agència per a la Qualitat del Sistema Universitari de Catalunya (AQU)
 - Coautor de más de treinta publicaciones científicas en revistas de alto impacto en el campo de la psicología clínica y la psiquiatría
@@ -33,7 +33,7 @@ title: CV - ES
 - Schreck, B., Valenciano-Mendoza, E., Balem, M., Jimenez-Murcia, S., Thiabaud, E., Tillet, S., Saillard, A., Donnio, Y., Grall-Bronnec, M., & Challet-Bouju, G. (2025). Suicidal Risk in Patients with Sex Addiction: Frequency, Sociodemographic, and Clinical Characteristics. Archives of sexual behavior, 54(6), 2349–2361
 - Valenciano-Mendoza, E. et al. (2023). Clinical Correlates of Sports Betting: A Systematic Review. Journal of gambling studies, 39(2), 579–624. 
 - Valenciano-Mendoza, E. et al. (2022). Common and differential risk factors behind suicidal behavior in patients with impulsivity-related disorders: The case of bulimic spectrum eating disorders and gambling disorder. Journal of behavioral addictions, 11(4), 963–978. 
-- Valenciano-Mendoza, E. et al. (2021). Prevalence of Suicidal Behavior and Associated Clinical Correlates in Patients with Behavioral Addictions. International journal of environmental research and public health, 18(21), 11085. https://doi.org/10.3390/ijerph182111085
+- Valenciano-Mendoza, E. et al. (2021). Prevalence of Suicidal Behavior and Associated Clinical Correlates in Patients with Behavioral Addictions. International journal of environmental research and public health, 18(21), 11085. 
 - Valenciano-Mendoza, E. et al. (2021). Suicidal behavior in patients with gambling disorder and their response to psychological treatment: The roles of gender and gambling preference. Journal of psychiatric research, 143, 317–326.
 
 ## AFILIACIONES PROFESIONALES
