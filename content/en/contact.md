@@ -2,7 +2,7 @@
 title: 'Contact - EN'
 ---
 
-You can send me a message via <a href="https://api.whatsapp.com/send?phone=689259702">WhatsApp</a>, [Linkedin](https://www.linkedin.com/in/eduardovalencianomendoza/) or an email. I will
+You can send me a message via <a href="https://api.whatsapp.com/send?phone=689259702">WhatsApp</a> or an email. I will
 get in touch as soon as possible.
 
 - Consultation in Barcelona
