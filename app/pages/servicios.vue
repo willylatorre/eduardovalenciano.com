@@ -59,11 +59,11 @@ const contact = computed(() => data.value.find(e => e.id.includes('contact')))
             <ContentRenderer :value="contact" :key="`contact-${locale}`" />
           </div>
           <div class="mx-auto">
-            <a href="https://www.google.com/maps/place/Via+Augusta,+120,+Sarri%C3%A0-Sant+Gervasi,+08006+Barcelona,+Spain/@41.4013616,2.1451008,17z" aria-label="Check the office location map link">
-              <img width="400" height="400" class="max-w-[90vw] rounded-sm overflow-hidden"
-                alt="Mapa de la ubicación de Eduardo Valenciano Mendoza, psicólogo"
-                src="https://maps.googleapis.com/maps/api/staticmap?center=Via%20Augusta%20120,%20Barcelona&zoom=17&size=400x400&markers=color:blue%7C41.4013576,2.1476757&key=AIzaSylCoEmBGQl0GVYe_Y3tBBM9Favi42xLWMBe" />
-          </a>
+            <iframe class="max-w-[90vw] rounded-sm overflow-hidden w-[400px] h-[400px]" name="contact-map"
+              src="https://www.google.com/maps?q=Via+Augusta+120,+08006+Barcelona,+Spain&output=embed"
+              width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Map showing the office location at Via Augusta 120, Barcelona"></iframe>
           </div>
         </div>
       </div>
